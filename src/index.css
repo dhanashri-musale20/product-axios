@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    background-color: #e6f7ff; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #4a90e2, #6fc3df); /* Gradient for eye-catching effect */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff; /* White text on gradient */
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: #fff; /* White links */
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .navbar .nav-links a:hover {
+    color: #ffdd57; /* Yellow on hover for contrast */
+  }
+  
+  /* Home Page and All Products Page */
+  .home-page,
+  .all-products-page {
+    padding: 2rem;
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4a90e2; /* Calm blue */
+    margin-bottom: 2rem;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1.5rem;
+  }
+  
+  /* Product Card */
+  .product-card {
+    background-color: #ffffff; /* White card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images look good */
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* View Details Button */
+  .view-details {
+    display: inline-block;
+    margin: 1rem auto 0;
+    padding: 0.6rem 1.2rem;
+    background-color: #4a90e2; /* Calm blue */
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 25px; /* Pill-shaped button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .view-details:hover {
+    background-color: #357abd; /* Darker blue on hover */
+  }
+  
+  /* View All Button */
+  .view-all-btn {
+    display: inline-block;
+    margin: 1rem auto 0; /* Adjusts spacing above the button */
+    padding: 0.6rem 1.2rem;
+    background-color: #4a90e2; /* Calm blue */
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 25px; /* Pill-shaped button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.view-all-btn:hover {
+    background-color: #3a7bd5; /* Darker shade for hover effect */
+}
+  
+  /* Product Details Page */
+  .product-details {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .product-details h2 {
+    color: #4a90e2; /* Calm blue */
+    margin-bottom: 1rem;
+  }
+  
+  .product-details p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+@import "tailwindcss";
