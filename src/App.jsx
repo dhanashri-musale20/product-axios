@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import AllProductsPage from './pages/AllProductspage';
 import ProductDetails from './components/ProductDetails';
 
+
+
 const App = () => {
   return (
     <Router>
